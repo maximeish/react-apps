@@ -1,0 +1,85 @@
+body {
+	margin: 23vh auto 0 auto;
+	padding: 0px;
+	box-sizing: border-box;
+	background: #292D3E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+}
+
+main > h1 {
+	text-transform: uppercase;
+	color: rgb(230, 230, 230);
+}
+
+.app-version {
+	position: absolute;
+	text-transform: lowercase;
+	font-size: small;
+	opacity: 0.5;
+}
+
+#react-banner {
+	display: block !important;
+	opacity: 0.4 !important;
+	font-size: large !important;
+	text-transform: uppercase !important;
+	letter-spacing: 2px !important;
+}
+
+.button::placeholder {
+	color: white !important;
+	opacity: .5;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.field-separator {
+	background: #ccc;
+	font-weight: bold;
+}
+
+.timer-container {
+	text-align: center;
+	color: rgb(230, 230, 230);
+	font-size: xx-large;
+}
+
+.timer-container span {
+	font-size: small;
+}
+
+.timer-container .time-separator {
+	font-size: large;
+}
+
+#btn-container {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.hide-field {
+	display: none;
+}
+
+.show-field {
+	display: block;
+	font-size: xx-large;
+	font-weight: bold;
+	background: rgba(255, 0, 0, 0.15);
+	padding: 20px;
+	margin: 10px auto 20px auto;
+	--animate-repeat: 90000;
+}
+
+@media (min-width: 940px) {
+	body {
+		width: 60%;
+	}
+}

@@ -1,0 +1,22 @@
+#container {
+	height: 100vh;
+  	display: grid;
+  	grid-template-columns: auto;
+  	grid-template-rows: 13vh 74vh 13vh;
+}
+
+#main-content {
+  max-height: 70vh;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+#nav-bar {
+  color: #eee;
+  background: #222;
+}
+
+#footer {
+  color: #eee;
+   background: #555; 
+}

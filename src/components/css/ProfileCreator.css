@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* containers section */
+
+.flex-container {
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flex-item {
+	box-shadow: 0px 0px 10px grey;
+	background: #EEE;
+	padding: 50px;
+}
+
+.no-image {
+	text-align: center;
+	font-size: xx-large;
+	border-radius: 50%;
+	padding: 20px;
+	background: rgba(255, 0, 0, 0.5);
+}
+
+/* end of containers section */
+
+
+/* profile editor section */
+
+.editor-header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: xx-large;
+	border-bottom: 2px solid #AAA;
+	padding-bottom: 5px;
+	margin-bottom: 40px;
+}
+
+.react-logo {
+	padding-top: 19px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.text-faded {
+	opacity: 0.6;
+	font-size: small;
+	padding: 0;
+	margin: 0;
+	transform: translateY(-10px)
+}
+
+.text-faded-normal {
+	opacity: 0.6;
+	font-size: small;
+	transform: translateY(-5px);
+}
+
+.input-icon i { 
+    position: absolute;
+    padding: 7px 10px 7px 15px;
+    font-size: xx-large;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.input-field {
+	position: relative;
+	padding-left: 60px;
+	text-align: left;
+}
+
+.form-group:focus {
+	color: dodgerblue;
+}
+
+/* end of profile editor section */
+
+
+/* created profile section */
+
+#created-profile {
+	max-width: 50%;
+	border-radius: 10px;
+	min-height: 50vh;
+	padding: 25px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.profile-image {
+	font-family: Asap;
+	color: rgba(240, 240, 240, 1.0);
+	padding: 10px 0;
+	width: 100px;
+	text-align: center;
+	font-size: xx-large;
+	border: 5px solid #999;
+	background: rgba(0, 0, 255, 0.5);
+	border-radius: 50%;
+	margin: 0 auto;
+	transition: 0.3s ease;
+}
+
+.profile-image:hover {
+	background: rgba(0, 0, 255, 0.9);
+}
+
+.profile-name {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: xx-large;
+}
+
+.profile-bio {
+	border: 2px solid #444;
+	padding: 10px;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 35px;
+	font-size: x-large;
+	border-radius: 10px;
+}
+
+/* end of created profile section */
+
+/* fa icons */
+
+.fa-paint-brush {
+	background: linear-gradient(to right, lightpink, lightblue);
+}
+
+.fa-chrome {
+	background: linear-gradient(to right, lightblue, yellow);
+}
+
+/* end of fa icons */

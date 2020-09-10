@@ -9,6 +9,7 @@
     "cors": "^2.8.5",
     "cross-fetch": "^3.0.5",
     "jquery": "^3.5.1",
+    "netlify-cli": "^2.62.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
@@ -21,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy-prod": "serve -s build"
+    "deploy-prod-local": "serve -s build",
+    "deploy-prod-netlify": "netlify deploy --prod"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -30,16 +30,26 @@ button:focus {
   opacity: 0.3;
   margin-bottom: 2em;
   text-transform: uppercase;
+  width: 60%;
 }
 
 .no-task {
+  text-align: center;
   margin-top: 2em;
-  font-size: 5em;
+  font-size: 4em;
   opacity: 0.1;
+  width: 60%;
 }
 
 .input-task {
+  display: flex;
+  justify-content: center;
   margin-bottom: 1em;
+  width: 60%;
+}
+
+.input-task * {
+  display: block;
 }
 
 .add-task {
@@ -59,6 +69,8 @@ button:focus {
   padding: 0.5em;
   font-size: 1.2em;
   border-radius: 2px;
+  border: 1px solid lightgray;
+  color: rgba(0, 0, 0, 0.705);
 }
 
 #tasks-container {
@@ -66,6 +78,7 @@ button:focus {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  width: 60%;
 }
 
 .task-txt {
@@ -94,9 +107,8 @@ button:focus {
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.3em;
+  width: 60%;
 }
-
-
 
 .completed {
   transition: 0.5s ease;
@@ -110,6 +122,20 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center; 
+}
+
+@media (max-width: 895px) {
+  .warning-msg {
+    width: 80%;
+  }
+
+  .input-task {
+    width: 80%;
+  }
+
+  #tasks-container {
+    width: 80%;
+  }
 }
 
 @media (max-width: 790px) {
@@ -130,26 +156,31 @@ button:focus {
   }
 
   .add-task {
-    padding: 0.3em;
+    padding: 0.3em 0.2em;
+    word-wrap: nowrap;
   }
 
   .task-input {
-    padding: 0.1em;
+    padding: 0.2em 0.1em;
+    width: 70%;
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 695px) {
+  .warning-msg {
+    width: 90%;
+  }
+
   .input-task {
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 0;
+    min-width: 90%;
   }
 
-  .input-task *  {
-    display: block;
-    margin: 0.4em auto;
+  #tasks-container {
+    width: 100%;
   }
 
-  .task-input {
-    padding: 0.3em;
+  .task-box {
+    width: 100%;
   }
 }
